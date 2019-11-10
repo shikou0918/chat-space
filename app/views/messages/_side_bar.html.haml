@@ -3,12 +3,12 @@
     .side-header
       .side-header__box
         %p.side-header__box__user
-          shikou
+          = current_user.name
         %p.side-header__box__icon
-          = link_to "#" do
-            %i.fa.fa-edit
-          = link_to "#" do
-            %i.fa.fa-cog
+          = link_to do
+            = fa_icon 'pencil-square-o', class: 'icon'
+          = link_to do
+            = fa_icon 'cog', class: 'icon'
 
     .groups
       .group
@@ -16,7 +16,3 @@
           test
         %p.group__latest-message
           まだメッセージはありません
-
-
-
-
