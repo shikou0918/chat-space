@@ -1,0 +1,38 @@
+.chat
+  .chat-main
+    .main-header
+      .main-header__left-box
+        %h2.main-header__left-box__current-group
+          sample
+        %ul.main-header__left-box__member-list
+          Member：
+          %li.main-header__left-box__member-list__member
+            shikou
+      = link_to edit_group_path(@group) do
+        .main-header__edit-btn 
+          Edit
+
+    .messages
+      = render "messages/messages"
+      -# .message
+      -#   .message__upper-info
+      -#     %p.message__upper-info__talker
+      -#       shikou
+      -#     %p.message__upper-info__date
+      -#       2019/11/09(Sat) 15:00:00
+      -#   %p.message__text
+      -#     this is a first message
+    .form
+      .input-box
+      = form_for [@group, @message] do |f|
+        = f.text_field :content, class: 'message_content', placeholder: 'type a message'
+        = f.label :image, class: 'image' do
+          = f.file_field :image
+        %i.fa.fa-image
+        = f.submit 'Send', class: 'submit-btn'
+
+    -#   %input.message_content{name: "message", placeholder: "type a message", type: "text"}
+    -#   %label
+    -#     %input.image{name: "image", type: "file"}
+    -#     %i.fa.fa-image
+    -# %input.submit-btn{name: "commit", type: "submit", value: "Send"}

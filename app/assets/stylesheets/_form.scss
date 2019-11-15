@@ -3,35 +3,32 @@
     padding: 20px 40px;
     background-color: #ddd;
 
-    .input-box {
-      position: relative;
-      width: 100%;
+  .input-box {
+    position: relative;
+    width: 100%;
+  }
+
+    .message_content {
+      height: 50px;
+      width: 945px;
+      color: #434a54;
+      border-style: none;
+    }
+    .image {
+      display: none;
     }
 
-      .message_content {
-        height: 50px;
-        width: 945px;
-        color: #434a54;
-        border-style: none;
-      }
-      .image {
-        display: none;
-      }
-
-      .fa {
-        position: absolute;
-        top: 15px;
-        right: 150px;
-        cursor: pointer;  
-      }
-    .submit-btn {
-      width: 100px;
-      height: 50px;
-      padding: 0 30px;
-      margin-top: -50px;
-      background-color: #38aef0;
-      color: white;
-      cursor: pointer;
-      float: right;
+    .fa {
+      margin-left: -30px;
+      cursor: pointer;  
+    }
+  .submit-btn {
+    width: 100px;
+    height: 50px;
+    padding: 0 30px;
+    background-color: #38aef0;
+    color: white;
+    cursor: pointer;
+    float: right;
     }
  }
