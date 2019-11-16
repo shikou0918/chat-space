@@ -13,7 +13,7 @@
           Edit
 
     .messages
-      = render "messages/messages"
+      = render @messages
       -# .message
       -#   .message__upper-info
       -#     %p.message__upper-info__talker
@@ -26,9 +26,9 @@
       .input-box
       = form_for [@group, @message] do |f|
         = f.text_field :content, class: 'message_content', placeholder: 'type a message'
-        = f.label :image, class: 'image' do
-          = f.file_field :image
-        %i.fa.fa-image
+        = f.label :image do
+          = f.file_field :image, class: 'image'
+          %i.fa.fa-image
         = f.submit 'Send', class: 'submit-btn'
 
     -#   %input.message_content{name: "message", placeholder: "type a message", type: "text"}
