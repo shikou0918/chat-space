@@ -14,14 +14,7 @@
 
     .messages
       = render @messages
-      -# .message
-      -#   .message__upper-info
-      -#     %p.message__upper-info__talker
-      -#       shikou
-      -#     %p.message__upper-info__date
-      -#       2019/11/09(Sat) 15:00:00
-      -#   %p.message__text
-      -#     this is a first message
+
     .form
       .input-box
       = form_for [@group, @message] do |f|
@@ -30,9 +23,3 @@
           = f.file_field :image, class: 'image'
           %i.fa.fa-image
         = f.submit 'Send', class: 'submit-btn'
-
-    -#   %input.message_content{name: "message", placeholder: "type a message", type: "text"}
-    -#   %label
-    -#     %input.image{name: "image", type: "file"}
-    -#     %i.fa.fa-image
-    -# %input.submit-btn{name: "commit", type: "submit", value: "Send"}
