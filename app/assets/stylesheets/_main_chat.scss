@@ -1,8 +1,8 @@
 .chat-main {
   width: calc(100vw - 300px);
   float: left;
-
-
+  overflow: hidden;
+ 
   .main-header {
     height: 100px;
     padding: 0 40px;
@@ -10,6 +10,7 @@
     justify-content: space-between;
     border-bottom: solid 1px #eee;
     overflow: scroll;
+    
     &__left-box {
       margin-top: 35px;
 

@@ -25,10 +25,11 @@
   }
 
 .groups {
-  height: calc(100vh - 120px);
+  height: calc(100vh - 100px);
   background-color: #2f3e51;
   padding: 20px 20px 0;
   overflow: scroll;
+  box-sizing: border-box;
 
   .group {
     margin-bottom: 40px;
@@ -38,11 +39,16 @@
       font-size: 15px;
       margin-bottom: 5px;
       color: white;
+      
     }
     &__latest-message {
       font-size: 11px;
       color: white;
+      
         }  
+    a:link {
+      text-decoration: none;
+    }
   }
 }
   
