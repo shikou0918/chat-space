@@ -4,8 +4,8 @@
     background-color: #ddd;
 
   .input-box {
-    position: relative;
     width: 100%;
+    display: flex;
   }
 
     .message_content {
@@ -19,16 +19,18 @@
     }
 
     .fa {
+      font-size: 1.3rem;
       margin-left: -30px;
-      cursor: pointer;  
+      margin-top: 15px;
+      cursor: pointer;
     }
   .submit-btn {
     width: 100px;
     height: 50px;
     padding: 0 30px;
+    margin-left: 15px;
     background-color: #38aef0;
     color: white;
     cursor: pointer;
-    float: right;
     }
- }
+}

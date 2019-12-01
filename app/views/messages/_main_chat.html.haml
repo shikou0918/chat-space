@@ -17,10 +17,10 @@
       = render @messages
 
     .form
-      .input-box
       = form_for [@group, @message] do |f|
-        = f.text_field :content, class: 'message_content', placeholder: 'type a message'
-        = f.label :image do
-          = f.file_field :image, class: 'image'
-          %i.fa.fa-image
-        = f.submit 'Send', class: 'submit-btn'
+        .input-box
+          = f.text_field :content, class: 'message_content', placeholder: 'type a message'
+          = f.label :image do
+            = f.file_field :image, class: 'image'
+            %i.fa.fa-image
+          = f.submit 'Send', class: 'submit-btn'
