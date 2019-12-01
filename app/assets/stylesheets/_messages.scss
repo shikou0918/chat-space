@@ -1,5 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
 .messages {
-  height: calc(100vh - 280px);
+  height: calc(100vh - 190px);
   padding: 46px 40px;
   background-color: #fafafa;
   overflow: scroll;
