@@ -9,9 +9,8 @@ CarrierWave.configure do |config|
     provider: 'AWS',
     aws_access_key_id: Rails.application.secrets.aws_access_key_id,
     aws_secret_access_key: Rails.application.secrets.aws_secret_access_key,
-    region: 'ap-northeast-1'
+    region: 'ap-northeast-1' 
   }
 
-  config.fog_directory  = 'deploy-app-image'
-  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/deploy-app-image'
-end
+  config.fog_directory  = 'バケット名'
+  config.asset_host = 'https://deploy-app-image.s3.amazonaws.com' #このように修正
