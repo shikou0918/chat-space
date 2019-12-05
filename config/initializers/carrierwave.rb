@@ -13,5 +13,5 @@ CarrierWave.configure do |config|
   }
 
   config.fog_directory  = 'deploy-app-image'
-  config.asset_host = 'https://deploy-app-image.s3.amazonaws.com' #このように修正
+  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/deploy-app-image' #このように修正
 end
