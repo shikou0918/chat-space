@@ -6,9 +6,9 @@
           = current_user.name
         %p.side-header__box__icon
           = link_to new_group_path do
-            %i.fa.fa-edit
+            = icon('fas', 'edit')
           = link_to edit_user_path(current_user) do
-            %i.fa.fa-cog
+            = icon('fas', 'cog')
 
 
     .groups
